@@ -97,59 +97,57 @@
                         </ol>
                         <br />
 
-                        <div class="blanks">
-                          <form>
-                        <div class="form-group form-inline">
-
-                            <label for="nums">Enter your number here</label>
-                            <input id="nums" class="form-control" type="text">
-                            <a href="js/scripts.js" class="btn btn-default" type="submit" id="ping" onclick="myFunction" > Ping Pong!</a>
-
-                      </div>
-                    </form>
-                    </div>
+                        <div id="userInput">
+              <form>
+                <div class="form-group">
+                  Enter your number here: <input id="number" class="btn btn-default" type="number">
+                  <button type="submit" class="">Ping Pong</button>
+                </div>
+              </form>
 
 
+<br />
 
-
-
-
-
-                        <br />
-
-                        <div class="row">
-         <div class="col-md-6">
-           <h2>You said:</h2>
-           <ul class="unstyled">
-
-           </ul>
-         </div>
-
-
-                    </div>
-                </>
+              <div id="output">
+                <strong>Results</strong>
+                <ul class="result">
+                </ul>
+              </div>
             </div>
-        </div>
 
 
-    </div>
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Menu Toggle Script -->
-    <script>
-        $("#menu-toggle").click(function(e) {
-            e.preventDefault();
-            $("#wrapper").toggleClass("toggled");
-        });
-
-// script for the function
 
 
-    </script>
+
+
+
+
+
+
+
+
+                        </div>
+                        </>
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- jQuery -->
+            <script src="js/jquery.js"></script>
+
+            <!-- Bootstrap Core JavaScript -->
+            <script src="js/bootstrap.min.js"></script>
+
+            <!-- Menu Toggle Script -->
+            <script>
+                $("#menu-toggle").click(function(e) {
+                    e.preventDefault();
+                    $("#wrapper").toggleClass("toggled");
+                });
+
+                // script for the function
+            </script>
 </body>
 
 </html>

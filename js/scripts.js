@@ -1,16 +1,32 @@
+$(document).ready(function() {
+  $("#userInput form").submit(function(event) {
 
+    var arr = [];
+    var num = parseInt($("input#number").val());
 
-function myFunction (){
-  var greeting;
-if (i%3===0){
-  greeting="ping";
-} else if (i%5===0){
-  greeting="pong";
-}else if (i%15===0) {
-  greeting="pingpong";
-} else {
+    for(var i=1; i<=num; i++){
+      arr.push([i]);
+    }
 
-  console.log(myFunction);
-}
- myFunction();
-}
+    for(var j = 0; j < arr.length; j++){
+
+      if (arr[j]%3 === 0 && arr[j]%5 === 0) {
+        $(".result").append("<li>PingPong</li>");
+      }
+      else if (arr[j]%5 === 0) {
+        $(".result").append("<li>Pong</li>");
+      }
+      else if (arr[j]%3 === 0){
+        $(".result").append("<li>Ping</li>");
+      }
+      else {
+        $(".result").append("<li>"+arr[j]+"</li>");
+      }
+    }
+
+    $(".footer").show();
+    // $("#output").show();
+
+    event.preventDefault();
+  });
+});
