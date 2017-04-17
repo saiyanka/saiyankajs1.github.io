@@ -58,7 +58,7 @@
                 <li>
                     <a href="https://github.com/saiyanka">Nash Chege</a>
                 </li>
-                    
+
 
             </ul>
         </div>
@@ -97,21 +97,37 @@
                         </ol>
                         <br />
 
+                        <div class="blanks">
+                          <form>
                         <div class="form-group form-inline">
-                            <label for="verb">Enter your number here</label>
-                            <input id="verb" class="form-control" type="text">
-                            <a href="#menu-toggle" class="btn btn-default" > Ping Pong!</a>
-                        </div>
+
+                            <label for="nums">Enter your number here</label>
+                            <input id="nums" class="form-control" type="text">
+                            <a href="js/scripts.js" class="btn btn-default" type="submit" id="ping" onclick="myFunction" > Ping Pong!</a>
+
+                      </div>
+                    </form>
+                    </div>
+
+
+
 
 
 
 
                         <br />
 
+                        <div class="row">
+         <div class="col-md-6">
+           <h2>You said:</h2>
+           <ul class="unstyled">
+
+           </ul>
+         </div>
 
 
                     </div>
-                </div>
+                </>
             </div>
         </div>
 
@@ -129,6 +145,10 @@
             e.preventDefault();
             $("#wrapper").toggleClass("toggled");
         });
+
+// script for the function
+
+
     </script>
 </body>
 
